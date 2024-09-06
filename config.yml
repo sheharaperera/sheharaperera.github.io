@@ -44,7 +44,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers","courses","design"]
+    MainSections: ["papers","research","design"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -55,14 +55,14 @@ params:
     profileMode:
           enabled: true
           title: Shehara Perera
-          subtitle: " I am a PhD student in Computational Mechanics at the University of Cambridge. My research interests include computational mechanics and dynamics with applications to aerospace, automotive, and robotics."
+          subtitle: " I am a PhD student in Computational Mechanics at the University of Cambridge. My broad research interests are in computational mechanics and dynamics with applications to aerospace, automotive, and robotics."
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
             - name: Papers
               url: /papers/
-            - name: Courses
+            - name: Research
               url: /courses/
             - name: Design
               url: /design/

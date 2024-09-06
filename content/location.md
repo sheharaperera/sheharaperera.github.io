@@ -17,14 +17,7 @@ hidemeta: true
 Civil Engineering Building
 7a JJ Thomson Avenue
 Cambridge, CB3 0FA
-
----
-
-#### Mailing address
-
-Civil Engineering Building
-7a JJ Thomson Avenue
-Cambridge, CB3 0FA
+United Kingdom
 
 ---
 
