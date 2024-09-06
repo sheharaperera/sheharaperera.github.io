@@ -15,7 +15,7 @@ menu:
           url: /papers/
           weight: 1
         - name: Research
-          url: /courses/
+          url: /research/
           weight: 2
         - name: Design
           url: /design/
@@ -63,7 +63,7 @@ params:
             - name: Papers
               url: /papers/
             - name: Research
-              url: /courses/
+              url: /research/
             - name: Design
               url: /design/
             - name: Tags

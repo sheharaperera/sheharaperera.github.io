@@ -45,7 +45,9 @@ code {
     direction: ltr;
 }
 
-code, .archive-entry-title, .entry-header {
+code,
+.archive-entry-title,
+.entry-header {
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -63,7 +65,7 @@ pre {
     top: 4px;
     right: 4px;
     color: var(--secondary);
-    background: rgba(229, 225, 244, 0.9);
+    background: rgb(255, 255, 255);
     border-radius: 4px;
     border: 1px solid var(--purple);
     padding: 1px 5px;
