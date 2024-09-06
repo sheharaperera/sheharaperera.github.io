@@ -4,8 +4,8 @@ date: 2024-07-02
 url: /location/
 aliases:
     - /contact.html
-author: "Pascal Michaillat"
-description: "Pascal Michaillat's office location and mailing address at the University of California, Santa Cruz."
+author: "Shehara Perera"
+description: "Shehara Perera's office location and mailing address at the University of Cambridge, United Kingdom."
 hidemeta: true
 
 ---
@@ -14,21 +14,20 @@ hidemeta: true
 
 #### Office address
 
-Room 437 (4th floor)  
-Engineering 2 Building  
-UC Santa Cruz
+Civil Engineering Building
+7a JJ Thomson Avenue
+Cambridge, CB3 0FA
 
 ---
 
 #### Mailing address
 
-Economics Department  
-UC Santa Cruz  
-1156 High Street  
-Santa Cruz, CA 95064
+Civil Engineering Building
+7a JJ Thomson Avenue
+Cambridge, CB3 0FA
 
 ---
 
 #### Office location
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203668.66166295038!2d-122.06180807362631!3d37.09743194165668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4174e5b57475%3A0x97880f47ac591627!2sDepartment%20of%20Economics!5e0!3m2!1sen!2sus!4v1686026390720!5m2!1sen!2sus" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9779.22676956223!2d0.0943879!3d52.2105603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d877c1b96dcf3d%3A0xb0b3bef44ba67335!2sCivil%20Engineering%20Building!5e0!3m2!1sen!2suk!4v1725658158558!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -14,7 +14,7 @@ menu:
         - name: Papers
           url: /papers/
           weight: 1
-        - name: Courses
+        - name: Research
           url: /courses/
           weight: 2
         - name: Design
@@ -75,17 +75,17 @@ params:
         - name: CV
           url: /cv.pdf
         - name: Email
-          url: mailto:pascal.michaillat@gmail.com
+          url: mailto:ulsp2@cam.ac.uk
         - name: Location
           url: /location/
-        - name: Office Hours
-          url: /officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=lrmg3jkAAAAJ&hl=en
         - name: YouTube
           url: https://www.youtube.com/@sheharaperera
         - name: GitHub
           url: https://github.com/sheharaperera
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/sheharaperera/
 
     assets:
         disableScrollBarStyle: true
