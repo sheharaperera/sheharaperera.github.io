@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/" 
-title: Pascal Michaillat
+baseURL: "https://sheharaperera.github.io/" 
+title: Shehara Perera
 paginate: 20
 theme: PaperMod
 
@@ -28,8 +28,8 @@ menu:
           weight: 5
 
 params:
-    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and contact information."
-    author: Pascal Michaillat
+    description: "This website hosts Shehara Perera's research, publications, curriculum vitae, and contact information."
+    author: Shehara Perera
     googleAnalyticsID: "G-97G4MZ4061"
     images: ["cover.png"]
     DateFormat: "January 2006"
@@ -54,8 +54,8 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Pascal Michaillat
-          subtitle: "I am an associate professor of economics at the University of California, Santa Cruz. I research why economic slack—especially unemployment—exists, why slack fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations."
+          title: Shehara Perera
+          subtitle: " I am a PhD student in Computational Mechanics at the University of Cambridge. My research interests include computational mechanics and dynamics with applications to aerospace, automotive, and robotics."
           imageUrl: "/picture.jpeg"
           imageWidth: 160
           imageHeight: 160
@@ -81,11 +81,11 @@ params:
         - name: Office Hours
           url: /officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=lrmg3jkAAAAJ&hl=en
         - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
+          url: https://www.youtube.com/@sheharaperera
         - name: GitHub
-          url: https://github.com/pmichaillat
+          url: https://github.com/sheharaperera
 
     assets:
         disableScrollBarStyle: true
@@ -93,7 +93,7 @@ params:
         hiddenInList: true
         hiddenInSingle: true
     label:
-      text: "Pascal Michaillat"
+      text: "Shehara Perera"
       icon: /favicon.ico
       iconHeight: 18
 
