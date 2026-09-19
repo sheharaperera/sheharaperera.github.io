@@ -1,0 +1,39 @@
+<article class="pub-card">
+  <div class="pub-thumb-link">
+    {{- if .Params.cover.image }}
+    <img class="pub-thumb" loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title | plainify }}">
+    {{- else }}
+    <div class="pub-thumb pub-thumb-empty" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h11l5 5v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M15 4v5h5"/></svg>
+    </div>
+    {{- end }}
+  </div>
+  <div class="pub-body">
+    <h3 class="pub-title">{{ .Title }}</h3>
+    {{- with .Params.author }}
+    <p class="pub-authors">
+      {{- range $i, $a := . }}{{- if $i }}, {{ end }}{{- $parts := split $a " " }}{{- $last := index $parts (sub (len $parts) 1) }}{{- if eq $a site.Params.author }}<strong>{{ $last }}</strong>{{- else }}{{ $last }}{{- end }}{{- end }}
+    </p>
+    {{- end }}
+    {{- with .Params.venue }}
+    <p class="pub-venue">{{ . }}</p>
+    {{- end }}
+    <div class="pub-links">
+      {{- with .Params.link }}
+      <a class="pub-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      {{- end }}
+      {{- with .Params.abstract }}
+      <span class="pub-bibtex" tabindex="0">
+        <span class="pub-btn pub-bibtex-trigger">Abstract</span>
+        <div class="pub-bibtex-content">{{ . }}</div>
+      </span>
+      {{- end }}
+      {{- with .Params.bibtex }}
+      <span class="pub-bibtex" tabindex="0">
+        <span class="pub-btn pub-bibtex-trigger">BibTeX</span>
+        <pre class="pub-bibtex-content">{{ . }}</pre>
+      </span>
+      {{- end }}
+    </div>
+  </div>
+</article>

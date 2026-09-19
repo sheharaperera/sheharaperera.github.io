@@ -1,0 +1,85 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Venue and year",
+          "name": "venue",
+          "type": "string"
+        },
+        {
+          "title": "Research area",
+          "name": "theme",
+          "type": "choice",
+          "choices": [
+            "quantum",
+            "robotics",
+            "dynamics"
+          ]
+        },
+        {
+          "title": "Show on home page",
+          "name": "selected",
+          "type": "boolean"
+        },
+        {
+          "title": "Authors",
+          "name": "author",
+          "type": "list"
+        },
+        {
+          "title": "PDF / publisher link",
+          "name": "link",
+          "type": "string"
+        },
+        {
+          "title": "Abstract",
+          "name": "abstract",
+          "type": "string",
+          "single": false
+        },
+        {
+          "title": "BibTeX",
+          "name": "bibtex",
+          "type": "string",
+          "single": false
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.framework.startCommand": "hugo server -M",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.git.enabled": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/content",
+      "title": "content"
+    },
+    {
+      "path": "[[workspace]]/content/fun",
+      "title": "fun"
+    },
+    {
+      "path": "[[workspace]]/content/papers",
+      "title": "papers"
+    }
+  ]
+}

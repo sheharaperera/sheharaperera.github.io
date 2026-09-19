@@ -1,0 +1,37 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- $pages := .RegularPages.ByDate.Reverse }}
+{{- range site.Data.themes }}
+{{- $id := .id }}
+{{- $group := where $pages "Params.theme" $id }}
+{{- if $group }}
+<section class="pub-group">
+  <h2 class="pub-group-title">{{ .title }}</h2>
+  <div class="pub-grid">
+    {{- range $group }}
+    {{- partial "pub_card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+{{- end }}
+
+{{- $ids := slice }}
+{{- range site.Data.themes }}{{ $ids = $ids | append .id }}{{ end }}
+{{- $other := where $pages "Params.theme" "not in" $ids }}
+{{- if $other }}
+<section class="pub-group">
+  <h2 class="pub-group-title">Other</h2>
+  <div class="pub-grid">
+    {{- range $other }}
+    {{- partial "pub_card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- end }}

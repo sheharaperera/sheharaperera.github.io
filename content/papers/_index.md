@@ -1,5 +1,10 @@
 ---
-title: "Papers"
-author: "Shehara Perera"
-description: "Research papers on vehicle dynamics, control, and robotics."
+title: "Publications"
+description: "Shehara Perera's publications on quantum computing for computational mechanics, robotics, and control."
+cascade:
+  - _build:
+      render: never
+      list: always
+    target:
+      kind: page
 ---

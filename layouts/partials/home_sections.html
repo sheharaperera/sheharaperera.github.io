@@ -1,0 +1,47 @@
+<div class="home-sections">
+  {{- with site.Home.Content }}
+  <section class="home-section">
+    <h2 class="home-section-title">About</h2>
+    <div class="home-about">{{ . }}</div>
+  </section>
+  {{- end }}
+
+  {{- $selected := where (where site.RegularPages "Section" "papers") "Params.selected" true }}
+  {{- if $selected }}
+  <section class="home-section">
+    <h2 class="home-section-title">Recent Publications</h2>
+    <ul class="pub-list">
+      {{- range $selected }}
+      {{- partial "pub_list_item.html" . }}
+      {{- end }}
+    </ul>
+    <p class="home-section-more"><a href="{{ "papers/" | relURL }}">All publications &rarr;</a></p>
+  </section>
+  {{- end }}
+
+  {{- with site.Data.news }}
+  <section class="home-section">
+    <h2 class="home-section-title">News</h2>
+    <ul class="news-list">
+      {{- range . }}
+      <li><span class="news-date">{{ .date }}</span><span class="news-text">{{ .text | markdownify }}</span></li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+
+  <section class="home-section">
+    <h2 class="home-section-title">Contact</h2>
+    <p class="home-contact">Email: <span class="obf-email" data-u="ulsp2" data-d="cam.ac.uk">ulsp2 [at] cam [dot] ac [dot] uk</span></p>
+    <p class="home-contact">Address: Department of Engineering, University of Cambridge, CB2 1PZ</p>
+    <script>
+      document.querySelectorAll('.obf-email').forEach(function (el) {
+        var addr = el.dataset.u + '@' + el.dataset.d;
+        var a = document.createElement('a');
+        a.href = 'mailto:' + addr;
+        a.textContent = el.dataset.u + ' [at] ' + el.dataset.d.replace(/\./g, ' [dot] ');
+        el.replaceWith(a);
+      });
+    </script>
+  </section>
+</div>

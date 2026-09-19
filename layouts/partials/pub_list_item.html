@@ -1,0 +1,28 @@
+<li class="pub-item">
+  <div class="pub-item-title">{{ .Title }}</div>
+  {{- with .Params.author }}
+  <div class="pub-authors">
+    {{- range $i, $a := . }}{{- if $i }}, {{ end }}{{- $parts := split $a " " }}{{- $last := index $parts (sub (len $parts) 1) }}{{- if eq $a site.Params.author }}<strong>{{ $last }}</strong>{{- else }}{{ $last }}{{- end }}{{- end }}
+  </div>
+  {{- end }}
+  <div class="pub-item-meta">
+    {{- with .Params.venue }}<span class="pub-venue">{{ . }}</span>{{- end }}
+    <span class="pub-links">
+      {{- with .Params.link }}
+      <a class="pub-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      {{- end }}
+      {{- with .Params.abstract }}
+      <span class="pub-bibtex" tabindex="0">
+        <span class="pub-btn pub-bibtex-trigger">Abstract</span>
+        <div class="pub-bibtex-content">{{ . }}</div>
+      </span>
+      {{- end }}
+      {{- with .Params.bibtex }}
+      <span class="pub-bibtex" tabindex="0">
+        <span class="pub-btn pub-bibtex-trigger">BibTeX</span>
+        <pre class="pub-bibtex-content">{{ . }}</pre>
+      </span>
+      {{- end }}
+    </span>
+  </div>
+</li>

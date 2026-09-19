@@ -1,0 +1,9 @@
+# Newest first. `date` is shown as written; `text` supports markdown.
+- date: "Sep 2026"
+  text: "Preprint: [IQFEM: A quantum finite element method for heterogeneous problems with immersed boundaries](https://arxiv.org/abs/2609.14077) is on arXiv."
+# - date: "Sep 2026"
+#   text: "Our review [Bioinspired hooves for robotics](https://doi.org/10.1088/1748-3190/ae98cd) is published in *Bioinspiration & Biomimetics*."
+- date: "Jul 2026"
+  text: "I gave a talk at the [WCCM-ECCOMAS 2026](https://wccm-eccomas2026.org/) on *immersed quantum finite element methods* in Munich, Germany."
+- date: "Jan 2025"
+  text: "Our paper [Beyond Humanoid Prosthetic Hands](https://doi.org/10.1109/TNSRE.2025.3528725) is published in *IEEE TNSRE*."
