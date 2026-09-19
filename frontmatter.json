@@ -64,7 +64,7 @@
     }
   ],
   "frontMatter.framework.id": "hugo",
-  "frontMatter.framework.startCommand": "hugo server -M",
+  "frontMatter.framework.startCommand": "hugo server -M --disableFastRender",
   "frontMatter.content.publicFolder": "static",
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.git.enabled": true,
