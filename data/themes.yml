@@ -1,6 +1,6 @@
 # Research areas, in display order. `id` matches `theme:` in each paper's frontmatter.
 - id: quantum
-  title: "Quantum Algorithms for Computational Mechanics"
+  title: "Quantum Algorithms and Computational Mechanics"
 - id: robotics
   title: "Robotics: Soft, Bioinspired and Assistive Devices"
 - id: dynamics

@@ -1,0 +1,73 @@
+.gh-activity {
+    margin-top: var(--content-gap);
+}
+
+.gh-scroll {
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.gh-months {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 4px;
+    font-size: 0.7rem;
+    color: var(--secondary);
+}
+
+.gh-months span {
+    width: 11px;
+    flex: 0 0 11px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.gh-grid {
+    display: flex;
+    gap: 3px;
+    width: max-content;
+}
+
+.gh-week {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.gh-day {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background: transparent;
+}
+
+.gh-day.gh-level-0 {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+}
+
+.gh-day.gh-level-1 {
+    background: color-mix(in srgb, var(--purple) 30%, var(--entry));
+}
+
+.gh-day.gh-level-2 {
+    background: color-mix(in srgb, var(--purple) 55%, var(--entry));
+}
+
+.gh-day.gh-level-3 {
+    background: color-mix(in srgb, var(--purple) 78%, var(--entry));
+}
+
+.gh-day.gh-level-4 {
+    background: var(--purple);
+}
+
+.gh-footer {
+    margin: 10px 0 0;
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
+.gh-footer a {
+    color: var(--purple);
+}
